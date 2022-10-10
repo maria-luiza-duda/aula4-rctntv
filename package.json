@@ -1,5 +1,5 @@
 {
-  "name": "aula4",
+  "name": "y",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -25,5 +25,16 @@
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maria-luiza-duda/aula4-rctntv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maria-luiza-duda/aula4-rctntv/issues"
+  },
+  "homepage": "https://github.com/maria-luiza-duda/aula4-rctntv#readme",
+  "description": ""
 }
