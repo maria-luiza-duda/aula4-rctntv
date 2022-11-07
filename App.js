@@ -5,46 +5,6 @@ import { ListItem, Avatar, Input } from 'react-native-elements'
 import HomeScreen from './screens/Home';
 import ListScreen from './screens/Contact';
 
-/*function HomeScreen({navigation}) {
-  return (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Home Screen</Text>
-    <Button title='Login' onPress={()=>navigation.navigate('Contact')}></Button>
-    <Button title='Cadastro' onPress={()=>navigation.navigate('Cadastro')}></Button>
-  </View>
-  );
-}*/
-
-/*function ListScreen({navigation}) {
-  return (
-    <View>
-      <ListItem bottomDivider>
-        <Avatar source={{uri: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9ecec6115725241.6053a8fa543a8.jpg'}} />
-        <ListItem.Content>
-          <ListItem.Title>{'Marcos Andrade'}</ListItem.Title>
-          <ListItem.Subtitle>{'81 988553424'}</ListItem.Subtitle>
-        </ListItem.Content>
-        <Button title='Edit' onPress={()=>navigation.navigate('Edit')}></Button>
-      </ListItem>
-      <ListItem bottomDivider>
-        <Avatar source={{uri: 'https://react.semantic-ui.com/images/avatar/large/stevie.jpg'}} />
-        <ListItem.Content>
-          <ListItem.Title>{'Patrícia Tavares'}</ListItem.Title>
-          <ListItem.Subtitle>{'81 998765332'}</ListItem.Subtitle>
-        </ListItem.Content>
-        <Button title='Edit' onPress={()=>navigation.navigate('Edit')}></Button>
-      </ListItem>
-      <ListItem bottomDivider>
-        <Avatar source={{uri: 'https://cdn.dribbble.com/users/1021722/screenshots/5681799/emil_still_2x.gif?compress=1&resize=400x300'}} />
-        <ListItem.Content>
-          <ListItem.Title>{'Rodrigo Antunes'}</ListItem.Title>
-          <ListItem.Subtitle>{'81 987765525'}</ListItem.Subtitle>
-        </ListItem.Content>
-        <Button title='Edit' onPress={()=>navigation.navigate('Edit')}></Button>
-      </ListItem>
-    </View>
-  );
-}*/
 
 function CadastroScreen({navigation}) {
   return (
@@ -58,7 +18,7 @@ function CadastroScreen({navigation}) {
   );
 }
 
-function NovocontScreen({navigation}) {
+function Novaspp({navigation}) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Input placeholder='Name'/>
@@ -88,11 +48,11 @@ function App() {
   return (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Contact" component={ListScreen} />
-      <Stack.Screen name="Cadastro" component={CadastroScreen} />
-      <Stack.Screen name="Novocont" component={NovocontScreen} />
-      <Stack.Screen name="Edit" component={EditScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="Contact" component={ListScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Cadastro" component={CadastroScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="Novaspp" component={Novaspp} options={{ headerShown: false }}/>
+      <Stack.Screen name="Edit" component={EditScreen} options={{ headerShown: false }}/>
     </Stack.Navigator>
   </NavigationContainer>
   );
