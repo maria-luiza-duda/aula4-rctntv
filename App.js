@@ -2,8 +2,10 @@ import { Text, View, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { ListItem, Avatar, Input } from 'react-native-elements'
+import HomeScreen from './screens/Home';
+import ListScreen from './screens/Contact';
 
-function HomeScreen({navigation}) {
+/*function HomeScreen({navigation}) {
   return (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Home Screen</Text>
@@ -11,9 +13,9 @@ function HomeScreen({navigation}) {
     <Button title='Cadastro' onPress={()=>navigation.navigate('Cadastro')}></Button>
   </View>
   );
-}
+}*/
 
-function ListScreen({navigation}) {
+/*function ListScreen({navigation}) {
   return (
     <View>
       <ListItem bottomDivider>
@@ -42,7 +44,7 @@ function ListScreen({navigation}) {
       </ListItem>
     </View>
   );
-}
+}*/
 
 function CadastroScreen({navigation}) {
   return (
